@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TestGame</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBOXAHsk_sB1765qDlASZcp8Xar8rCOMc0",
+        authDomain: "test-game-93835.firebaseapp.com",
+        databaseURL: "https://test-game-93835.firebaseio.com",
+        storageBucket: "test-game-93835.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/test-game.css">
+
+
+    {{content-for "head-footer"}}
+  </head>
+  <body id="test" class="background1">
+    {{content-for "body"}}
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/test-game.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
